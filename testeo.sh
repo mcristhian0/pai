@@ -8,7 +8,7 @@
 #   BASE_URL=https://mi-dominio.com bash testeo.sh
 # ═══════════════════════════════════════════════════════════════
 
-BASE="${BASE_URL:-http://localhost:3000}"
+BASE="${BASE_URL:-https://pai-teal.vercel.app}"
 PASS=0
 FAIL=0
 
