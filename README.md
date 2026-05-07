@@ -20,6 +20,25 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Environment variables
+
+Create a local `.env.local` file with the Supabase configuration required by the app:
+
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+- `SUPABASE_SERVICE_ROLE_KEY`
+
+The public values can be used in the browser, while the service role key must stay server-side only.
+
+## Authentication
+
+The app now requires authentication for all main routes.
+
+- Login page: `/login`
+- Logout action: global `Cerrar sesion` button
+
+Before testing, ensure the user exists in Supabase Auth with email/password credentials.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
